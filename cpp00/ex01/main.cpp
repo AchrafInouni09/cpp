@@ -1,18 +1,33 @@
-#include "Contact.h"
+#include "PhoneBook.h"
 
 
 
 
+
+void Program()
+{   
+    clsPhoneBook PhoneBook;
+    std::string str = "";
+    
+    while (1)
+    {
+        std::cout << "Enter : Add, Search, Exit\n";
+        std::cin >> str;
+        if (str == "exit")
+                return;
+        else if (str == "Add")
+                PhoneBook.Add();
+        else if (str == "Search")
+                PhoneBook.Search();
+        else 
+            std::cout << "wrong Command\n";
+    }
+}
 
 
 int main()
 {
-    clsContact Contact;
-
-    Contact.x = 0;
-    Contact.y = 1;
-
-    printf("x = %d\n", Contact.x);
-    printf("y = %d\n", Contact.y);
+    // clsPhoneBook PhoneBook;
+    Program();
     return 0;
 }
