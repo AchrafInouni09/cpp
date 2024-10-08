@@ -13,8 +13,7 @@ void Program()
     {
         std::cout << "Enter : Add, Search, Exit\n";
         std::cin >> str;
-        if (str[0] == '\0')
-                continue;
+
         if (str == "exit")
                 return;
         else if (str == "Add")
@@ -29,7 +28,7 @@ void Program()
 
 int main()
 {
-    // clsPhoneBook PhoneBook;
+    // Handle case for tmp NULL;
     Program();
     return 0;
 }
