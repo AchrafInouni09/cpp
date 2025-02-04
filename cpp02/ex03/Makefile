@@ -1,4 +1,4 @@
-SRCS = main.cpp HumanA.cpp HumanB.cpp Weapon.cpp
+SRCS = main.cpp Fixed.cpp  Point.cpp bsp.cpp
 OBJS = $(SRCS:.cpp=.o)
 NAME = a.out
 CXX = g++

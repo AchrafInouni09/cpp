@@ -1,6 +1,6 @@
-SRCS = main.cpp HumanA.cpp HumanB.cpp Weapon.cpp
+SRCS = main.cpp Harl.cpp 
 OBJS = $(SRCS:.cpp=.o)
-NAME = a.out
+NAME = harlFilter
 CXX = g++
 RM = rm -f
 CXXFLAGS =  -Wall -Wextra -Werror -std=c++98
