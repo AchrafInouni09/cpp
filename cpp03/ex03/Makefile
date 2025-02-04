@@ -1,4 +1,4 @@
-SRCS = main.cpp ClapTrap.cpp ScavTrap.cpp
+SRCS = main.cpp ClapTrap.cpp FragTrap.cpp DiamondTrap.cpp ScavTrap.cpp
 OBJS = $(SRCS:.cpp=.o)
 NAME = a.out
 CXX = g++
