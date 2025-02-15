@@ -3,7 +3,7 @@ OBJS = $(SRCS:.cpp=.o)
 NAME = a.out
 CXX = g++
 RM = rm -f
-CXXFLAGS =  -Wall -Wextra -Werror -std=c++98
+CXXFLAGS =  -Wall -Wextra -Werror -std=c++98 
 
 all: ${NAME}
 
