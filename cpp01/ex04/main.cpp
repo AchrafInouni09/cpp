@@ -17,11 +17,5 @@ int main(int argc, char  **argv)
     // cout << "######################" << endl;
     file.PrintFileContent();
 
-
-    // std::string s = "hello world zbi";
-    // std::string s1 = "world";
-    // std::string s2 = "hello" ;
-    // std::string test = FileMap::ft_replace(s, s1.c_str() ,s2.c_str()) ;
-    // cout << "new value : " << test << endl;
     return (0);
 }
