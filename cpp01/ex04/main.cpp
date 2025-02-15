@@ -1,13 +1,13 @@
 
 #include "file_map.h"
 
-using namespace std;
+// using namespace std;
 
 int main(int argc, char  **argv)
 {
     if (argc != 4)
     {
-        cout << "error ./a.out filename s1 s2" << endl;
+        std::cout << "error ./a.out filename s1 s2" << std::endl;
         return (1);
     }
     FileMap  file(argv[1], argv[2], argv[3]);
