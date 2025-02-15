@@ -1,9 +1,9 @@
-SRCS = main.cpp zombieHorde.cpp
+SRCS = main.cpp zombieHorde.cpp Zombie.cpp
 OBJS = $(SRCS:.cpp=.o)
 NAME = zombie
 CXX = g++
 RM = rm -f
-CXXFLAGS =  -Wall -Wextra -Werror -std=c++98
+CXXFLAGS =  -Wall -Wextra -Werror -std=c++98 -fsanitize=address
 
 all: ${NAME}
 
