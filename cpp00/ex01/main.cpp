@@ -12,9 +12,13 @@ void Program()
     while (1)
     {
         std::cout << "Enter : Add, Search, Exit\n";
-        std::cin >> str;
+        if (!std::getline(std::cin, str))  // Handle Ctrl+D (EOF)
+        {
+            std::cout << "\nEOF detected, exiting program\n";
+            return;
+        }
 
-        if (str == "exit")
+        if (str == "exit" || str.empty())
                 return;
         else if (str == "Add")
                 PhoneBook.Add();
