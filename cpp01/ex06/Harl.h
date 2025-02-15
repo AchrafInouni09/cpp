@@ -13,7 +13,7 @@ private:
     void error(void);
 
 public:
-    Harl(std::string level) : _level(level) {};
+    Harl(std::string level);
     void complain();
     short GetIndex(std::string level);
 };

@@ -2,6 +2,8 @@
 
 using namespace std;
 
+#include "Harl.h"
+
 
 
 class A
@@ -28,10 +30,9 @@ class B : protected A
 
 int main( void )
 {
-    B b;
+    Harl harl;
 
-    b.name = "aCHARF";
-    b.Show();
+    harl.complain("DEBUG");
 
     return (0);
 }

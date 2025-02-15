@@ -1,5 +1,7 @@
 #include "Harl.h"
 
+Harl::Harl(std::string level) : _level(level) {};
+
 void Harl::debug(void)
 {
     std::cout << "Debug message" << std::endl;
