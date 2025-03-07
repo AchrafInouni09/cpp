@@ -5,16 +5,6 @@ Fixed::Fixed() : _nbValue(0) {
     std::cout << "Default constructor called" << std::endl;
 }
 
-Fixed::Fixed(const int value) {
-    std::cout << "Int constructor called" << std::endl;
-    _nbValue = value << _fractionalBits;
-}
-
-Fixed::Fixed(const float value) {
-    std::cout << "Float constructor called" << std::endl;
-    _nbValue = roundf(value * (1 << _fractionalBits));
-}
-
 Fixed::Fixed(const Fixed &other) {
     std::cout << "Copy constructor called" << std::endl;
     *this = other;
