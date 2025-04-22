@@ -3,9 +3,9 @@
 int main() {
     
     FragTrap frag1("Warrior");
-    FragTrap frag2(frag1);  // Copy construction
+    FragTrap frag2(frag1);
     FragTrap frag3;
-    frag3 = frag1;  // Assignment operator
+    frag3 = frag1;
 
     
     frag1.highFivesGuys();

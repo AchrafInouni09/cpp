@@ -13,5 +13,14 @@ int main(void) {
     std::cout << b << std::endl;
     std::cout << Fixed::max(a, b) << std::endl;
 
+    // to be deleted;
+
+    // Fixed z(1);
+    // Fixed const e(88);
+
+    // std::cout << "z : " << z.toFloat() << "\n";
+    // std::cout << "e : " << e.toFloat() << "\n";
+    // std::cout << "Hello : " << Fixed::min(a, b);
+
     return 0;
 }

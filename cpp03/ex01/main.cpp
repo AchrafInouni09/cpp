@@ -22,11 +22,5 @@ int main() {
     // A.takeDamage(100);
     // A.attack("Ali");
 
-
-
-
-    
-
-
     return 0;
 }

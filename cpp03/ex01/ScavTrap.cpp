@@ -43,11 +43,13 @@ ScavTrap& ScavTrap::operator=(const ScavTrap &other)
 }
 void ScavTrap::attack(const std::string& target)
 {
-    if (energyPoints == 0) {
+    if (energyPoints == 0)
+    {
         std::cout << "ScavTrap " << name << " has no energy points left to attack!" << std::endl;
         return;
     }
-    if (hitPoints == 0) {
+    if (hitPoints == 0)
+    {
         std::cout << "ScavTrap " << name << " is dead and cannot attack!" << std::endl;
         return;
     }

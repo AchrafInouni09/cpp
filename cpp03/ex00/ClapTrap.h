@@ -13,12 +13,12 @@ private:
     unsigned int attackDamage;
 
 public:
-    // Orthodox Canonical Form
-    ClapTrap();                              // Default constructor
-    ClapTrap(const std::string& name);       // Parameterized constructor
-    ClapTrap(const ClapTrap& other);         // Copy constructor
-    ~ClapTrap();                             // Destructor
-    ClapTrap& operator=(const ClapTrap& other); // Assignment operator
+
+    ClapTrap();
+    ClapTrap(const std::string& name);
+    ClapTrap(const ClapTrap& other);
+    ~ClapTrap();
+    ClapTrap& operator=(const ClapTrap& other);
 
     // Member functions
     void attack(const std::string& target);

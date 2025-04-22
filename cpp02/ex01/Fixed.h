@@ -5,25 +5,25 @@
 
 class Fixed {
 private:
-    int _nbValue; // Raw fixed-point value
+    int _nbValue;
     static const int _fractionalBits = 8;
 
 public:
-    Fixed();                        // Default constructor
-    Fixed(const int value);         // Constructor with integer parameter
-    Fixed(const float value);       // Constructor with float parameter
-    Fixed(const Fixed &other);      // Copy constructor
-    Fixed &operator=(const Fixed &other); // Copy assignment operator
-    ~Fixed();                       // Destructor
+    Fixed();
+    Fixed(const int value);
+    Fixed(const float value);
+    Fixed(const Fixed &other);
+    Fixed &operator=(const Fixed &other);
+    ~Fixed();
 
-    int  getRawBits(void) const;    // Get the raw fixed-point value
-    void setRawBits(int const raw); // Set the raw fixed-point value
+    int  getRawBits(void) const;
+    void setRawBits(int const raw);
 
-    float toFloat(void) const;      // Convert to float
-    int toInt(void) const;          // Convert to int
+    float toFloat(void) const;
+    int toInt(void) const;
 };
 
-// Overload the insertion operator
+
 std::ostream &operator<<(std::ostream &out, const Fixed &fixed);
 
 #endif

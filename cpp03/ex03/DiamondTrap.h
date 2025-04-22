@@ -6,7 +6,8 @@
 
 #include <iostream>
 
-class DiamondTrap : public ScavTrap, public FragTrap {
+class DiamondTrap : public ScavTrap, public FragTrap
+{
 private:
     std::string name;
 
@@ -19,7 +20,7 @@ public:
     DiamondTrap& operator=(const DiamondTrap& other);
     
     void whoAmI();
-    using ScavTrap::attack;  // Explicitly use ScavTrap's attack function
+    using ScavTrap::attack;
 };
 
 #endif
