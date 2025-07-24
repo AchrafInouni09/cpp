@@ -3,6 +3,7 @@
 #include "ShrubberyCreationForm.h"
 #include "RobotomyRequestForm.h"
 #include "PresidentialPardonForm.h"
+#include "../ex01/Form.h"
 
 using namespace std;
 
@@ -36,26 +37,23 @@ int main ()
     //     std::cerr << e.what() << '\n';
     // }
 
-    Bureaucrat b("hamada", 3);
-    RobotomyRequestForm robot ("Simo");
-
-    cout << "robot name " << robot.GetName() << endl;
-
-    // while (b.get_grade() <= 45)
-    //     b.Decrement();
-
-    cout <<  "b grade after decrementing "   <<  b.get_grade() << "\n";
-
     try
     {
-        robot.execute(b);
+        Bureaucrat bureau ("burea", 9);
+
+        // ShrubberyCreationForm form("home");
+
+        Form form ("form",  10, 20);
+
+        // bureau.signForm(form);
+
+        cout << "status of form " << form.Get_Signed_Status() << endl;
+
+       form.execute(bureau, "home");
     }
     catch (exception &e)
     {
         std::cerr << e.what() << '\n';
     }
-
-    
-    
     return (0);
 }

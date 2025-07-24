@@ -42,10 +42,10 @@ int main ()
     if (!rrf)
         return 1;
 
-    // cout << rrf->GetName();
+    cout << rrf->GetName();
 
 
-    
+    delete (rrf);
     
 
     return (0);

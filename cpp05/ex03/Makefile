@@ -3,7 +3,7 @@ SRCS = Form.cpp Bureaucrat.cpp  ShrubberyCreationForm.cpp RobotomyRequestForm.cp
 OBJS = ${SRCS:.cpp=.o}
 OUT = a.out
 CXX = g++
-CXXFLAGS=-Wall -Wextra -Werror -std=c++98
+CXXFLAGS=-Wall -Wextra -Werror -std=c++98 -fsanitize=address
 RM= rm -f
 
 all : ${OUT}

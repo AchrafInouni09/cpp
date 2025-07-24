@@ -103,7 +103,7 @@ void     Bureaucrat::signForm(Form &form)
     if (form.Get_Signed_Status())
         std::cout << _name << " signed " << form.GetName() << std::endl;
     else
-        std::cout << _name << "couldn't sign " << form.GetName() << " because  grade out of bounds\n";    
+        std::cout << _name << " couldn't sign " << form.GetName() << " because  grade out of bounds\n";    
 }
   
 void Bureaucrat::executeForm(Form const & form) const

@@ -15,11 +15,12 @@ class Intern
     public : 
 
         Form *makeForm(std::string form, std::string target) ;
-    
+        
     private :
         Form * _Create_Shrubery_Form(std::string target);
         Form * _Create_Robotomy_Form(std::string target);
-        Form * _Create_Presidential_Form(std::string target);   
+        Form * _Create_Presidential_Form(std::string target);
+        
 };
 
 #endif
