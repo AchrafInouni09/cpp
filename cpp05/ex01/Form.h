@@ -4,7 +4,7 @@
 #include <iostream>
 #include "Bureaucrat.h"
 
-class Bureaucrat;
+// class Bureaucrat;
 
 class Form
 {
@@ -67,9 +67,9 @@ class Form
     void execute (const Bureaucrat &b, std::string target) const;
     
 
-    friend std::ostream &operator<< (std::ostream &os, const Form &form);
+   
     
 };
 
-
+  std::ostream &operator<< (std::ostream &os, const Form &form);
 # endif

@@ -16,10 +16,12 @@ class RobotomyRequestForm : public AForm
         RobotomyRequestForm(std::string target);
         RobotomyRequestForm (const RobotomyRequestForm & other);
         RobotomyRequestForm & operator= ( RobotomyRequestForm & other);
-        friend std::ostream & operator<< (std::ostream &os, const RobotomyRequestForm &robot);
         void execute (const Bureaucrat &b) const;
         virtual ~RobotomyRequestForm() ;
 
 };
+
+
+         std::ostream & operator<< (std::ostream &os, const RobotomyRequestForm &robot);
 
 # endif

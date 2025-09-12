@@ -65,9 +65,11 @@ class Form
     int Get_grade_for_execute() const;
     void   beSigned(Bureaucrat &b)  throw (GradeTooLowException);
     void execute(Bureaucrat const & executor) const ;
-    friend std::ostream &operator<< (std::ostream &os, const Bureaucrat &b);
+    
 
 };
 
+
+ std::ostream &operator<< (std::ostream &os, const Bureaucrat &b);
 
 #endif

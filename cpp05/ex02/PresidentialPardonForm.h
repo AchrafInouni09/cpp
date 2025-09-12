@@ -13,10 +13,11 @@ class PresidentialPardonForm : public AForm
         PresidentialPardonForm(std::string target);
         PresidentialPardonForm (const PresidentialPardonForm & other);
         PresidentialPardonForm & operator= ( PresidentialPardonForm & other);
-        friend std::ostream & operator<< (std::ostream &os, const PresidentialPardonForm &robot);
         void execute (const Bureaucrat &b) const;
         virtual ~PresidentialPardonForm() ;
 
 };
+
+    std::ostream & operator<< (std::ostream &os, const PresidentialPardonForm &robot);
 
 #endif

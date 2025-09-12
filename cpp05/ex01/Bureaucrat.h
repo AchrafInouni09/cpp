@@ -43,14 +43,14 @@ class Bureaucrat
         void    Increment()  throw (GradeTooHighException);
         void    Decrement()  throw (GradeTooLowException);
         virtual ~Bureaucrat() throw();
-        friend std::ostream &operator<< (std::ostream &os, const Bureaucrat &b);
+         
         void    signForm(Form &form);
     private :
         const std::string   _name;
         int                 _grade;
 };
 
-// std::ostream & operator<< (std::ostream &os, const Bureaucrat &b);
+std::ostream &operator<< (std::ostream &os, const Bureaucrat &b);
 
 
 # endif

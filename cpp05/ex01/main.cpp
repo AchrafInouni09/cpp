@@ -13,7 +13,7 @@ int main ()
     cout << "hello world .\n";
     try 
     {
-        Form frm("Achraf", 1, 1);
+        Form frm("Form 1", 1, 1);
 
         cout << frm;
 
@@ -31,8 +31,9 @@ int main ()
 
         // cout << "bureacrat grade : " << b.get_grade() << endl;
 
-        
-
+        Bureaucrat A ("Achraf", 1000);
+        std::cout << A ;
+        A.signForm(frm);
         cout << "signed status : " << frm.Get_Signed_Status() << "\n";
     }
     catch (Form::GradeTooHighException & e)
@@ -43,7 +44,6 @@ int main ()
     {
         std::cout << "sys execption : " << e.what() << endl;
     }
-    std::cout << "the end \n";
   
     return (0);
 }

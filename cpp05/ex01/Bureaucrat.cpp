@@ -1,5 +1,5 @@
 #include "Bureaucrat.h"
-// #include "Form.h"
+#include "Form.h"
 
 Bureaucrat::Bureaucrat (const std::string &name, int grade) : 
 _name (name), _grade(grade)

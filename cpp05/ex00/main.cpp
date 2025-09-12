@@ -14,17 +14,17 @@ int main ()
 
     try 
     {
-        Bureaucrat emp ("Hamada", 0);
-        {
-            cout << emp;
-        }
+        // Bureaucrat emp ("Hamada", 0);
+        // {
+        //     cout << emp;
+        // }
         Bureaucrat emp1 ("Achraf", 1);
         {
             cout << emp1;
         }
 
-        emp = emp1;
-        cout << emp;
+        // emp = emp1;
+        cout << emp1;
     }
     catch (const Bureaucrat::GradeTooHighException &e)
     {
