@@ -2,7 +2,7 @@
 #include "ScalarConverter.h"
 // #include <cstdlib>
 
-using namespace std;
+
 
 
 std::string trim(const std::string& s)
@@ -22,15 +22,7 @@ int main(int argc, char **argv)
         return (1);
     }
 
-
-    // cout <<  ScalarConverter::IsNumberParseable(argv[1])  << endl;
     ScalarConverter::Convert(argv[1]);
-
-    // -inff, +inff and nanf
-
-    // -inf, +inf and nan.
-
-    // std::cout << atof(argv[1]) << endl;
 
     return (0);
 }

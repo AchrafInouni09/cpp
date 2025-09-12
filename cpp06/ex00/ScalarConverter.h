@@ -23,8 +23,13 @@ class ScalarConverter
     
     public:
 
-    static void PrintWord(std::string s);
-    static void Convert(std::string s);
+
+        ScalarConverter();
+        ScalarConverter (const ScalarConverter &other);
+        ScalarConverter& operator= (const ScalarConverter&other);
+        ~ScalarConverter();
+        static void PrintWord(std::string s);
+        static void Convert(std::string s);
     ;
 };
 

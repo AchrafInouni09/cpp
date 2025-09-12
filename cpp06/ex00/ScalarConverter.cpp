@@ -1,5 +1,22 @@
 #include "ScalarConverter.h"
 
+
+
+
+ScalarConverter::ScalarConverter() {}
+
+ScalarConverter::ScalarConverter (const ScalarConverter &) {}
+ScalarConverter &ScalarConverter::operator= (const ScalarConverter&other)
+{
+    if (this != &other)
+    {
+        *this = other;
+    }
+    return (*this);
+}
+ScalarConverter::~ScalarConverter() {}
+
+
 void ScalarConverter::PrintWord(std::string s)
 {
     std::cout << "s : " <<   s << std::endl;
